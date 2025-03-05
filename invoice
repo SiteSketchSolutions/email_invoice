@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .invoice-container {
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            height: 50px;
+        }
+        .invoice-title {
+            text-align: right;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .total-section {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .payment-info {
+            text-align: right;
+        }
+
+        .terms {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+	.buttons {
+		padding:10px;
+		margin:20px;
+	}
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <img src="https://invoma-react.vercel.app/images/logo.svg" alt="Company Logo">
+            <div class="invoice-title">
+                <h1>INVOICE</h1>
+                <p>Invoice No: <span class="bold">#LL93784</span> | Date: <span class="bold">3-2-2025</span></p>
+            </div>
+        </div>
+        <div class="details">
+            <div>
+                <p class="bold">Invoice To:</p>
+                <p>Lowell H. Dominguez 84<br>Spilman Street, London<br>England EC2A 4NE<br>demo@gmail.com</p>
+            </div>
+            <div>
+                <p class="bold">Pay To:</p>
+                <p>Laraklink Ltd<br>86-90 Paul Street, London<br>England EC2A 4NE<br>demo@gmail.com</p>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>1. Website Design</td>
+                <td>Six web page designs and three times revision</td>
+                <td>$400</td>
+                <td>5</td>
+                <td>$2000.00</td>
+            </tr>
+            <tr>
+                <td>2. Web Development</td>
+                <td>Convert pixel-perfect frontend and make it dynamic</td>
+                <td>$400</td>
+                <td>4</td>
+                <td>$1600.00</td>
+            </tr>
+            <tr>
+                <td>3. App Development</td>
+                <td>Android And IOS Application Development</td>
+                <td>$450</td>
+                <td>3</td>
+                <td>$1350.00</td>
+            </tr>
+            <tr>
+                <td>4. Digital Marketing</td>
+                <td>Facebook, Youtube and Google Marketing</td>
+                <td>$500</td>
+                <td>1</td>
+                <td>$500.00</td>
+            </tr>
+        </table>
+        <div class="total-section">
+            <div class="payment-info">
+                <p><strong>Payment Info:</strong></p>
+                <p>Credit Card - 236************928</p>
+                <p>Amount: $5995.00</p>
+            </div>
+            <div>
+                <p>SubTotal: <strong>$5450.00</strong></p>
+                <p>Tax (10%): <strong>+ $545.00</strong></p>
+                <h2>Grand Total: $5995.00</h2>
+            </div>
+        </div>
+
+        <div class="terms">
+            <p><strong>Terms & Conditions:</strong></p>
+            <ul>
+                <li>All claims relating to quantity or shipping errors shall be waived by Buyer unless made in writing to Seller within thirty (30) days after delivery of goods to the address stated.</li>
+                <li>Delivery dates are not guaranteed and Seller has no liability for damages that may be incurred due to any delay in shipment of goods hereunder. Taxes are excluded unless otherwise stated.</li>
+            </ul>
+        </div>
+
+<div class="buttons">
+<button>Print</button>
+<button>Download</button>
+</div>
+    </div>
+</body>
+</html>
